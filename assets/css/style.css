@@ -1,10 +1,8 @@
 /* CONTAINER */
 .container {
-  width: 1024px;
+  width: 1140px;
   margin: 0 auto;
 }
-
-/* BODY */
 
 /* FONTS IMPORT */
 @font-face {
@@ -20,9 +18,29 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'BwModelica';
+  src: url('../fonts/BwModelica-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BODY */
+
 body {
   background-color: white;
   font-family: 'Trip Sans';
+  font-size: 16px;
+}
+
+/* TITRE */
+h1 {
+  font-family: 'BwModelica';
+  font-size: 54px;
+  font-weight: 900px;
+  margin-bottom: 16px;
+  margin-top: 35px;
 }
 
 /* HEADER */
@@ -31,17 +49,17 @@ header > div {
   height: 60px;
   display: flex;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 header img {
   width: 188px;
-  background-color: violet;
 }
+
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow;
   width: 450px;
 }
 
@@ -50,4 +68,78 @@ nav div:last-child {
   color: white;
   padding: 10px 16px;
   border-radius: 20px;
+}
+
+/* MAIN */
+.titre {
+  color: #ff5d5d;
+}
+
+/* SECTION TOP */
+#top > div:nth-last-child() {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.menu-shortcut {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 25px;
+}
+
+.menu-shortcut > div {
+  width: 181px;
+  height: 66px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: solid black 1px;
+}
+
+.menu-shortcut > div:first-child {
+  margin-left: 0px;
+}
+
+.menu-shortcut p {
+  padding: 11px 16px;
+  font-weight: 400px;
+}
+
+#photo-ville {
+  display: flex;
+}
+.main-photo img {
+  width: 654px;
+  height: 430px;
+  object-fit: cover;
+  margin-right: 2px;
+}
+
+#photo-ville-right img {
+  width: 484px;
+  height: 213.5px;
+  object-fit: cover;
+}
+
+/* TOP SECTION FOOTER */
+#topsection-footer {
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#topsection-footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#topsection-footer span {
+  margin-left: 5px;
+}
+
+.last-top-footer {
+  margin-left: 800px;
+  /* margin-right: 5px; */
 }
