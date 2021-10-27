@@ -4,62 +4,41 @@
   margin: 0 auto;
 }
 
-/* FONTS IMPORT */
-@font-face {
-  font-family: 'Trip Sans';
-  src: url('../fonts/TripSans-Regular.eot');
-  src: url('../fonts/TripSans-Regular.eot') format('embedded-opentype'),
-    url('../fonts/TripSans-Regular.woff2') format('woff2'),
-    url('../fonts/TripSans-Regular.woff') format('woff'),
-    url('../fonts/TripSans-Regular.ttf') format('truetype'),
-    url('../fonts/TripSans-Regular.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'BwModelica';
-  src: url('../fonts/BwModelica-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* BODY */
 
 body {
   background-color: white;
-  font-family: 'Trip Sans';
+  font-family: 'Trip Sans Reg';
   font-size: 16px;
   color: rgb(51, 51, 51);
 }
 
 /* TITRE */
 h1 {
-  font-family: 'BwModelica';
+  font-family: 'Trip Sans Med';
   color: black;
   font-size: 54px;
-  font-weight: 900px;
+  font-weight: bold;
   margin-bottom: 16px;
   margin-top: 35px;
 }
 
 h2 {
-  font-family: 'BwModelica';
+  font-family: 'Trip Sans Med';
   color: black;
   font-size: 28px;
   margin-bottom: 20px;
   margin-top: 20px;
   line-height: 33px;
+  font-weight: 900px;
+
 }
 /* HEADER */
 
 header > div {
   height: 60px;
   display: flex;
-  justify-content: space-between;
-  font-weight: bold;
+  justify-content: space-between; */
 }
 
 header img {
@@ -73,11 +52,22 @@ header nav {
   width: 450px;
 }
 
-nav div:last-child {
+header nav > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav span {
+  margin-right: 5px;
+}
+
+header button {
+  font-family: 'Trip Sans Reg';
   background-color: black;
   color: white;
   padding: 10px 16px;
   border-radius: 20px;
+  border-style: none;
 }
 
 /* MAIN */
@@ -119,7 +109,7 @@ nav div:last-child {
   display: flex;
 }
 .main-photo img {
-  width: 654px;
+  flex: 1;
   height: 430px;
   object-fit: cover;
   margin-right: 2px;
@@ -165,4 +155,79 @@ nav div:last-child {
 #text-city-details p {
   font-size: 20px;
   line-height: 24px;
+  font-family: 'Georgia';
+}
+
+/* 2-SECTION CITY IMMANQUABLES */
+
+#cityImmanquables {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  height: 800px;
+  
+}
+
+#text-carrousel1 {
+  display: flex;
+  
+}
+
+#section2text {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+  flex-shrink: 0;
+}
+
+/* 2 - CARROUSEL */
+#carrousel1 {
+  display: flex;
+  overflow: scroll;
+  margin-left: 15px;
+  
+}
+
+#carrousel-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background-color: yellow;
+  width: 272px;
+  margin-right: 15px;
+  
+}
+
+
+#carrousel1 > a > div {
+  display: flex;
+  background-color: green;
+  width: 272px;
+  /* height: 80px; */
+  border: solid 1px black;
+}
+
+/* 2 - CARROUSEL ITEM */
+
+#carrousel-item > div:first-child {
+  background-color:cornflowerblue;
+  height: 205px;
+  display: flex;
+  
+  flex-direction: column;
+}
+
+#carrousel-item > div:first-child > div {
+  background-color: darksalmon;
+  width: 20px;
+  height: 20px;
+  border: solid black 1px;
+  
+}
+
+/* Remove link style */
+#carrousel1 > a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }
