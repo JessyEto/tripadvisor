@@ -1,0 +1,23 @@
+/* MEDIA QUERIES */
+
+/* ------------------------- */
+
+@media (max-width: 1183px) {
+  .container {
+    background-color: yellow;
+    width: 100%;
+    padding: 0px 25px;
+  }
+  /* HEADER */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    background-color: rosybrown;
+  }
+
+  /*  HEADER */
+  header nav > div p {
+    display: none;
+  }
+}
