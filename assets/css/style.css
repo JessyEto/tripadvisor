@@ -171,7 +171,7 @@ header p {
   margin-bottom: 2px;
 }
 
-/* TOP SECTION FOOTER */
+/* SECTION TOP FOOTER */
 #topsection-footer {
   font-size: 12px;
   color: rgb(51, 51, 51);
@@ -185,12 +185,16 @@ header p {
   justify-content: space-between;
 }
 
-#topsection-footer span {
-  margin-left: 5px;
+#topsection-footer > div:first-child {
+  width: 245px;
 }
 
-.last-top-footer {
-  margin-left: 800px;
+#topsection-footer > div > div {
+  display: flex;
+}
+
+#topsection-footer span {
+  margin-left: 5px;
 }
 
 /* ---------------------------------- */
@@ -201,7 +205,7 @@ header p {
 }
 
 #text-city-details {
-  width: 570px;
+  width: 50%;
 }
 
 #text-city-details p {
@@ -279,8 +283,6 @@ header p {
 #carrousel1 > a > div {
   display: flex;
   width: 272px;
-  /* height: 80px; */
-  /* border: solid 1px black; */
 }
 
 /* 2 - CARROUSEL ITEM */
@@ -290,7 +292,6 @@ header p {
   height: 205px;
   display: flex;
   position: relative;
-  /* flex-direction: column; */
 }
 
 .carrousel-item > div:first-child > div:first-child {
@@ -307,6 +308,7 @@ header p {
   align-items: center;
   border-radius: 50%;
 }
+
 #greenbadge {
   background-color: #35e1a1;
   width: 35px;
@@ -471,3 +473,16 @@ a:active {
 }
 
 /* ------------------------- */
+
+/* ------- FORMULAIRE ------------ */
+
+#formulaire-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cyan;
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

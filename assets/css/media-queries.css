@@ -79,15 +79,48 @@
     width: 402px;
     margin-left: 2px;
   }
+
+  /* 2-SECTION CITY IMMANQUABLES */
+
+  #cityImmanquables {
+    background-color: blue;
+  }
+  #carrousel1 {
+    background-color: red;
+    position: relative;
+    right: 0px;
+    height: calc(75% * 80vw);
+    /* margin-right: -25px; */
+    margin-right: 0px;
+    width: 80vw;
+  }
+
+  #text-carrousel1 {
+    background-color: yellow;
+    justify-content: space-between;
+    margin-right: -25px;
+  }
+
+  #section2text {
+    background-color: purple;
+  }
+
+  #carrousel1 > a {
+    border: solid 1px green;
+    box-sizing: border-box;
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #carrousel1 > a > div {
+    width: calc();
+  }
 }
 
 /* --------------SCREEN UNDER 1024 PX ---------------*/
 
 @media (max-width: 1024px) {
-  /* .container {
-    background-color: rosybrown;
-  } */
-
   /*  HEADER */
   header nav > div p {
     display: none;
@@ -114,9 +147,14 @@
     width: 100%;
     height: 138px;
   }
+
+  /* SECTION CITY DETAILS------------- */
+  #text-city-details {
+    width: 100%;
+  }
 }
 
-/* SCREEN UNDER 768 PX */
+/* --------- SCREEN UNDER 768 PX -------------- */
 
 @media (max-width: 767px) {
   /* .container {
@@ -179,5 +217,16 @@
   #photo-ville {
     width: 767px;
     margin-left: -25px;
+  }
+
+  /* SECTION TOP -------- footer */
+  #topsection-footer {
+    display: none;
+  }
+
+  /* SECTION CITY DETAILS------------- */
+  #text-city-details p {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
