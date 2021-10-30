@@ -26,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       document.getElementById('contactForm').reset();
 
-      await axios.post('http://localhost:3000/form', data);
+      await axios.post('https://tripadvisor-api.herokuapp.com/form', data);
     });
 });
